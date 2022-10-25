@@ -1,0 +1,53 @@
+import java.util.Scanner ;
+
+class Main {
+  
+      public static void main(final String []  args )  {
+       int toplam;
+        
+        double ortalama;
+        
+      int mat,kimya, fizik, tarih, turkce, muzik;
+        
+    final Scanner input1 = new Scanner(System.in);
+        System.out.println("matemetik notunuzu giriniz");
+      mat=input1.nextInt();
+        
+        Scanner input2 = new Scanner(System.in);
+        System.out.println("Kimya notunuzu giriniz");
+      kimya=input2.nextInt();
+      Scanner input3 = new Scanner(System.in) ;
+			System.out.println("Fizik  notunuzu giriniz");
+     fizik=input3.nextInt();
+		
+        Scanner input4 = new Scanner(System.in);
+        System.out.println("Tarih notunuzu giriniz");
+      tarih=input4.nextInt();
+        Scanner input5 = new Scanner(System.in);
+        System.out.println("Türkçe  notunuzu giriniz");
+      turkce=input5.nextInt();
+        Scanner input6 = new Scanner(System.in);
+        System.out.println("Müzik  notunuzu giriniz");
+      muzik=input6.nextInt();
+     toplam= (mat + fizik + kimya + turkce + tarih + muzik);
+      ortalama=(toplam/6);
+
+     System.out.println(ortalama);
+        boolean sonuc= (ortalama >60);
+        
+      String str= sonuc ? "Geçtiniz" : "kaldınız";
+         System.out.println(str);
+        
+      
+        
+       
+        
+       
+      }
+
+	
+
+        
+}
+
+
